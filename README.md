@@ -195,3 +195,7 @@ What this module does not include:
 - Concrete combat/stat/business logic
 - Concrete economy/inventory implementation
 - Concrete save backend
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
