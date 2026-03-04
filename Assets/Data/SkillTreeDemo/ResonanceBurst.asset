@@ -10,21 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 193d88c167a7edc4990b47af0afa245e, type: 3}
-  m_Name: CoreAttunement
+  m_Name: ResonanceBurst
   m_EditorClassIdentifier: SkillTree.Runtime::SkillTree.Core.SkillSO
-  SkillId: core_attunement
-  DisplayName: Core Attunement
-  Description: Stabilizes inner flow to steadily improve mana regeneration.
-  Icon: {fileID: 21300000, guid: 65d28c00478042e4bb92ad816f1b3008, type: 3}
-  MaxLevel: 3
-  PrerequisiteIds: []
+  SkillId: resonance-burst
+  DisplayName: Resonance Burst
+  Description: Converts stabilized wards into broader area damage potential.
+  Icon: {fileID: 21300000, guid: e3e23ff88371abe40bf3d0e899a35328, type: 3}
+  MaxLevel: 2
+  PrerequisiteIds:
+  - attuned-ward
   Effects:
   - TargetType: Stat
-    StatId: mana_regen
+    StatId: aoe_damage
     Operation: 0
-    Value: 0.5
+    Value: 5
   UpgradeCosts:
   - Key: gold
     CostType: 0
-    Amount: 40
-  NodePosition: {x: 0, y: -200}
+    Amount: 115
+  - Key: essence
+    CostType: 0
+    Amount: 2
+  NodePosition: {x: 0, y: -600}
